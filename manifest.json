@@ -1,0 +1,14 @@
+{
+  "name": "Vacme notification",
+  "description": "Notifications for free slots!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [{
+      "js": ["vacme.js"],
+      "matches": ["https://be.vacme.ch/*"]
+  }],
+  "permissions": ["notifications", "webRequest"],
+  "host_permissions": [
+      "https://be.vacme.ch/*"
+  ]
+}
